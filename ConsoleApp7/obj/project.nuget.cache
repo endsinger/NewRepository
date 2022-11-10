@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NOGisnyADB7dXlKrk7Y/XF2xQCG2u0SsxeYK0j8GGDlBY43sPVnvUQ4cZwIsgxZtYKZ4Ce404xVRVm7fV9l5OQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Олег\\source\\repos\\ConsoleApp7\\ConsoleApp7\\ConsoleApp7.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Олег\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
