@@ -7,31 +7,14 @@ namespace ConsoleApp7
     {
         static void Main(string[] args)
         {
-            try
+            string filePath = @"C:\Users\Олег\source\repos\ConsoleApp7\Program.cs"; 
+
+            
+            using (StreamReader sr = File.OpenText(filePath))
             {
-                DirectoryInfo dirInfo = new DirectoryInfo(@"C:\\");
-                if (dirInfo.Exists)
-                {
-                    Console.WriteLine(dirInfo.GetDirectories().Length + dirInfo.GetFiles().Length);
-                }
-
-                DirectoryInfo newDirectory = new DirectoryInfo(@"/newDirectory");
-                if (!newDirectory.Exists)
-                    newDirectory.Create();
-
-                Console.WriteLine(dirInfo.GetDirectories().Length + dirInfo.GetFiles().Length);
-
-                dirInfo.Delete(true); 
-                Console.WriteLine("Каталог удален");
-
-                DirectoryInfo dirInfo2 = new DirectoryInfo(@"/Users/luft/Desktop/testFolder");
-                string trashPath = "/Users/luft/.Trash/testFolder";
-
-                dirInfo.MoveTo(trashPath);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error");
+                string str = "";
+                while ((str = sr.ReadLine()) != null)
+                    Console.WriteLine(str);
             }
         }
     }
